@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="container">
+  <h2>Progress Bar</h2>
+
+  <div class="w3-light-grey w3-round-xlarge" style="width:50%;">
+    <div id="myBar" class="w3-round-xlarge" style="height:12px;width:0; color:#9DC8AE; color:#fff!important;background-color:#9DC8AE!important; 
+"></div>
+  </div>
+  <br>
+
+  <button class="w3-button  w3-round-xlarge" style="color:#fff!important;background-color:#9DC8AE!important; align-items:center;"onclick="move()">Click Me</button> 
+</div>
+
+<script>
+var maxWidth = 0;
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = maxWidth;
+ 	
+  if (maxWidth < 100){
+  	maxWidth += 12.5;
+     var id = setInterval(frame, 10);
+     
+    function frame() {
+    if (width >= maxWidth) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+ 
+  }
+}
+</script>
+
+</body>
+</html> 
