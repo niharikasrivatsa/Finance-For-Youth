@@ -1,0 +1,74 @@
+body{
+  width=device-width
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 50px;
+
+}
+header{
+  background-color: #555555;
+}
+h1{
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  padding:0px;
+}
+a:hover {
+  color:blue;
+}
+
+button {
+  background-color: #9DC8AE;
+  margin-top: 10px;
+  margin:10px 0px;
+  border:0px;
+  color: #555555;
+  padding: 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+button:hover{
+  text-decoration: underline;
+}
+
+.btn{
+  display:block;
+  width:100%;
+  background-color: #555555;
+  color:white;
+  padding: 0px 30px;
+  margin:10px 0px;
+  border: 0px;
+
+}
+.btn:hover{
+  background-color: grey;
+
+}
+
+.clr{
+  clear:both;
+  clear: inline-start;
+}
+
+.center{
+  text-align: center;
+}
+
+.container{
+  width:40%
+
+}
+
+#myForm{
+position: absolute;
+left:35%;
+
+}
+
+hr{
+  text-align: center;
+}
